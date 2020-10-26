@@ -7,7 +7,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 
 @SpringBootApplication
-class WebappApplication extends SpringBootServletInitializer {
+public class WebappApplication extends SpringBootServletInitializer {
 
 
     @Override
