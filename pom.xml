@@ -24,13 +24,21 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-	<repositories>
+<!-- 	<repositories>
 		<repository>
 			<id>Shibboleth</id>
 			<name>Shibboleth</name>
 			<url>https://build.shibboleth.net/nexus/content/repositories/releases/</url>
 		</repository>
-	</repositories>
+	</repositories> -->
+	
+	<repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+        </repository>
+    </repositories>
 
 	<dependencies>
 		<dependency>
@@ -43,18 +51,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+	     <dependency>
+            <groupId>org.springframework.security.extensions</groupId>
+            <artifactId>spring-security-saml-dsl</artifactId>
+            <version>1.0.0.M3</version>
+        </dependency>
 
-		<dependency>
-			<groupId>org.springframework.security.extensions</groupId>
-			<artifactId>spring-security-saml2-core</artifactId>
-			<version>1.0.10.RELEASE</version>
-			<exclusions>
-				<exclusion>
-					<groupId>commons-collections</groupId>
-					<artifactId>commons-collections</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 	</dependencies>
 
 	<build>

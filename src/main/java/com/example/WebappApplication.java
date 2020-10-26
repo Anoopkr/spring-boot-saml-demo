@@ -8,7 +8,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 
 @SpringBootApplication
-//@EnableWebMvc
 class WebappApplication extends SpringBootServletInitializer {
 
 
